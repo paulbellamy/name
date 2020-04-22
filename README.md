@@ -34,6 +34,6 @@ import (
 
 func main() {
 	rand.Seed(time.Now().UnixNano())
-	fmt.Printf(name.Generate())
+	fmt.Println(name.Generate())
 }
 ```
