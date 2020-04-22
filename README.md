@@ -17,3 +17,23 @@ red-sun-54
 still-frog-05
 dark-wildflower-69
 ```
+
+## Usage
+
+Make sure you seed the random number generator before using this. For example:
+```
+package main
+
+import (
+	"fmt"
+	"math/rand"
+	"time"
+
+	"github.com/paulbellamy/name"
+)
+
+func main() {
+	rand.Seed(time.Now().UnixNano())
+	fmt.Printf(name.Generate())
+}
+```
